@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar with Logo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search something...">
+      <button class="cool-btn" onclick="searchPage()">Search 🔍</button>
+    </div>
+  </div>
+
+  <script>
+    function searchPage() {
+      let query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      if (query === "science") {
+        window.location.href = "science.html";
+      }
+    
+      else {
+        alert("No page found for: " + query);
+      }
+    }
+  </script>
+</body>
+</html>
